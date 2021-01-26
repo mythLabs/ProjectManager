@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server",
-    "build": "webpack"
+    "start": "webpack serve",
+    "build": "webpack --config webpack.prod.config.js"
   },
   "author": "Amit",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "lite-server": "^2.6.1",
     "ts-loader": "^8.0.14",
     "typescript": "^4.1.3",
